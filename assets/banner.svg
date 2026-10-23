@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Glowing accents -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <linearGradient id="stream-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.1" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.5" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        fill: #ffffff;
+        letter-spacing: -1px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        fill: #94a3b8;
+        letter-spacing: 0.5px;
+      }
+      .tag-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #38bdf8;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        fill: #e2e8f0;
+      }
+      
+      /* Subtle animations */
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.4; }
+        50% { transform: scale(1.15); opacity: 0.7; }
+      }
+      @keyframes floatLine {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseNode {
+        0%, 100% { r: 5px; opacity: 0.6; }
+        50% { r: 8px; opacity: 1; }
+      }
+      @keyframes shimmer {
+        0% { opacity: 0.3; transform: translateX(-50px); }
+        50% { opacity: 0.8; transform: translateX(50px); }
+        100% { opacity: 0.3; transform: translateX(-50px); }
+      }
+
+      .pulse-orb {
+        animation: pulse 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .animated-stream {
+        stroke-dasharray: 20, 15;
+        animation: floatLine 8s linear infinite;
+      }
+      .animated-stream-rev {
+        stroke-dasharray: 16, 12;
+        animation: floatLine 10s linear infinite reverse;
+      }
+      .pulsing-dot {
+        animation: pulseNode 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="400" fill="url(#bg-grad)" />
+
+  <!-- Grid overlay -->
+  <rect width="1200" height="400" fill="url(#grid)" />
+
+  <!-- Ambient Glowing Orbs in Background -->
+  <circle cx="200" cy="90" r="160" fill="#38bdf8" fill-opacity="0.12" filter="url(#soft-glow)" class="pulse-orb" />
+  <circle cx="1020" cy="300" r="180" fill="#a855f7" fill-opacity="0.15" filter="url(#soft-glow)" class="pulse-orb" />
+  <circle cx="600" cy="380" r="140" fill="#6366f1" fill-opacity="0.1" filter="url(#soft-glow)" />
+
+  <!-- Animated Ingestion Stream Lines (in background layer) -->
+  <g opacity="0.6">
+    <path d="M -50 310 C 250 310, 350 360, 600 360 C 850 360, 950 310, 1250 310" 
+          fill="none" stroke="url(#stream-grad)" stroke-width="2.5" class="animated-stream" />
+    <path d="M -50 340 C 300 340, 450 375, 600 375 C 750 375, 900 340, 1250 340" 
+          fill="none" stroke="#818cf8" stroke-width="1.5" class="animated-stream-rev" opacity="0.4" />
+    
+    <!-- Packet dots flowing along streams -->
+    <circle cx="300" cy="330" r="4" fill="#38bdf8" filter="url(#glow)" class="pulsing-dot" />
+    <circle cx="600" cy="360" r="5" fill="#a855f7" filter="url(#glow)" class="pulsing-dot" style="animation-delay: 1s;" />
+    <circle cx="900" cy="335" r="4" fill="#38bdf8" filter="url(#glow)" class="pulsing-dot" style="animation-delay: 2s;" />
+  </g>
+
+  <!-- Decorative Top Pipeline Tracker Graphic -->
+  <g transform="translate(60, 45)">
+    <rect x="0" y="0" width="1080" height="4" rx="2" fill="#1e293b" />
+    <rect x="0" y="0" width="280" height="4" rx="2" fill="url(#primary-glow)" filter="url(#glow)" />
+    <circle cx="280" cy="2" r="5" fill="#38bdf8" filter="url(#glow)" />
+    <text x="300" y="6" class="tag-text" font-size="11">STREAMING INGESTION // HIGH-THROUGHPUT PIPELINES</text>
+  </g>
+
+  <!-- Foreground Main Card for Title (Ensures crystal clear readability) -->
+  <g transform="translate(60, 80)">
+    <!-- Header Badge -->
+    <rect x="0" y="0" width="220" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="15" cy="15" r="5" fill="#10b981" filter="url(#glow)" />
+    <text x="28" y="20" class="badge-text" fill="#cbd5e1">TELEMETRY &amp; LOG ENGINE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="85" class="title-text">
+      Awesome Log Collectors <tspan fill="url(#primary-glow)">&amp; Ingestion</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="125" class="subtitle-text">
+      The ultimate guide to high-performance log shippers, telemetry pipelines &amp; SaaS processors
+    </text>
+
+    <!-- Feature Pills / Highlights -->
+    <g transform="translate(0, 160)">
+      <!-- Pill 1: Vector -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="150" height="38" rx="8" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+        <text x="16" y="24" class="badge-text" font-weight="700" fill="#38bdf8">⚡ Vector (Rust)</text>
+      </g>
+      <!-- Pill 2: Fluent Bit -->
+      <g transform="translate(162, 0)">
+        <rect x="0" y="0" width="165" height="38" rx="8" fill="url(#card-grad)" stroke="#60a5fa" stroke-width="1" stroke-opacity="0.4" />
+        <text x="16" y="24" class="badge-text" font-weight="700" fill="#60a5fa">☸️ Fluent Bit &amp; K8s</text>
+      </g>
+      <!-- Pill 3: Cribl & SaaS -->
+      <g transform="translate(339, 0)">
+        <rect x="0" y="0" width="170" height="38" rx="8" fill="url(#card-grad)" stroke="#a855f7" stroke-width="1" stroke-opacity="0.4" />
+        <text x="16" y="24" class="badge-text" font-weight="700" fill="#c084fc">🔀 Cribl &amp; Datadog</text>
+      </g>
+      <!-- Pill 4: OpenTelemetry -->
+      <g transform="translate(521, 0)">
+        <rect x="0" y="0" width="180" height="38" rx="8" fill="url(#card-grad)" stroke="#34d399" stroke-width="1" stroke-opacity="0.4" />
+        <text x="16" y="24" class="badge-text" font-weight="700" fill="#34d399">🔭 OpenTelemetry / OTel</text>
+      </g>
+      <!-- Pill 5: Grafana Alloy -->
+      <g transform="translate(713, 0)">
+        <rect x="0" y="0" width="165" height="38" rx="8" fill="url(#card-grad)" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4" />
+        <text x="16" y="24" class="badge-text" font-weight="700" fill="#fbbf24">🔥 Grafana Alloy</text>
+      </g>
+    </g>
+
+    <!-- Mini stats bar -->
+    <g transform="translate(0, 220)">
+      <text x="0" y="16" class="tag-text" fill="#64748b">
+        BENCHMARKED PERFORMANCE • REAL-TIME ENRICHMENT • VRL &amp; GROK PARSING • FLEET OBSERVABILITY
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="0" y="396" width="1200" height="4" fill="url(#primary-glow)" />
+</svg>
