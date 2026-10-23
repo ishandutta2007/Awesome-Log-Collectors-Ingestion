@@ -3,7 +3,7 @@
 <div align="center">
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-Log-Collectors-Ingestion/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Log-Collectors-Ingestion?style=social" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Log-Collectors-Ingestion/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Log-Collectors-Ingestion?style=social" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Log-Collectors-Ingestion/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Log-Collectors-Ingestion?style=social" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Log-Collectors-Ingestion/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Log-Collectors-Ingestion" alt="GitHub Issues" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Log-Collectors-Ingestion/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Log-Collectors-Ingestion" alt="License" /></a>
@@ -63,39 +63,39 @@ Below are the leading commercial platforms for managed log ingestion, enterprise
 
 ## 🛠️ Open-Source GitHub Projects
 
-All open-source log forwarders, stream processors, and agents are sorted below in descending order by **GitHub Star Count** ⭐. Click each star badge to view stargazers.
+All open-source log forwarders, stream processors, and agents are sorted below in descending order by **GitHub Stars_Count** ⭐. Click each Stars_Badge to view stargazers.
 
-- **[Grafana Loki](https://github.com/grafana/loki)** [![GitHub Stars](https://img.shields.io/github/stars/grafana/loki?style=social&color=white)](https://github.com/grafana/loki/stargazers)  
+- **[Grafana Loki](https://github.com/grafana/loki)** [![GitHub_Stars](https://img.shields.io/github/stars/grafana/loki?style=social&color=white)](https://github.com/grafana/loki/stargazers)  
   **Like Prometheus, but for logs.** Horizontally-scalable, highly-available, multi-tenant log aggregation system. Indexes only metadata (labels) rather than the entire log payload, drastically reducing operational overhead and storage costs compared to traditional search engines. Integrates natively with Grafana dashboards and LogQL query syntax.
 
-- **[Vector](https://github.com/vectordotdev/vector)** [![GitHub Stars](https://img.shields.io/github/stars/vectordotdev/vector?style=social&color=white)](https://github.com/vectordotdev/vector/stargazers)  
+- **[Vector](https://github.com/vectordotdev/vector)** [![GitHub_Stars](https://img.shields.io/github/stars/vectordotdev/vector?style=social&color=white)](https://github.com/vectordotdev/vector/stargazers)  
   **The ultra-high-performance Rust-based telemetry pipeline.** Developed by Timber.io (now Datadog) under MPL 2.0. Demonstrates top-tier disk throughput (over **76.7 MiB/s** in standard benchmarks) with ultra-low memory footprints (~188 MiB). Features **VRL (Vector Remap Language)** for inline schema validation, mutation, payload enrichment, and multi-cloud fan-out routing without JVM overhead.
 
-- **[Logstash](https://github.com/elastic/logstash)** [![GitHub Stars](https://img.shields.io/github/stars/elastic/logstash?style=social&color=white)](https://github.com/elastic/logstash/stargazers)  
+- **[Logstash](https://github.com/elastic/logstash)** [![GitHub_Stars](https://img.shields.io/github/stars/elastic/logstash?style=social&color=white)](https://github.com/elastic/logstash/stargazers)  
   **The Elastic Stack's enterprise transformation backbone.** Java-based server-side pipeline engine offering the deepest processing catalog available: Grok pattern matching, conditional branching, and hundreds of input/filter/output integrations. Best suited as a centralized aggregation tier for complex parsing before shipping to Elasticsearch or OpenSearch.
 
-- **[Fluentd](https://github.com/fluent/fluentd)** [![GitHub Stars](https://img.shields.io/github/stars/fluent/fluentd?style=social&color=white)](https://github.com/fluent/fluentd/stargazers)  
+- **[Fluentd](https://github.com/fluent/fluentd)** [![GitHub_Stars](https://img.shields.io/github/stars/fluent/fluentd?style=social&color=white)](https://github.com/fluent/fluentd/stargazers)  
   **The CNCF Graduated unified logging tier.** Ruby- and C-based log aggregator featuring over 1,000+ battle-tested community plugins. Standardizes structured JSON records across disparate applications and cloud providers with pluggable buffering and fallback routing mechanisms.
 
-- **[Redpanda Connect (formerly Benthos)](https://github.com/redpanda-data/connect)** [![GitHub Stars](https://img.shields.io/github/stars/redpanda-data/connect?style=social&color=white)](https://github.com/redpanda-data/connect/stargazers)  
+- **[Redpanda Connect (formerly Benthos)](https://github.com/redpanda-data/connect)** [![GitHub_Stars](https://img.shields.io/github/stars/redpanda-data/connect?style=social&color=white)](https://github.com/redpanda-data/connect/stargazers)  
   **Streamlined, resilient stream processor in Go.** Built with declarative YAML configurations, Bloblang mapping language, and zero external runtime dependencies. Operates as a resilient log broker, protocol translator, and multiplexer for enterprise streaming architectures with sub-millisecond latency.
 
-- **[Fluent Bit](https://github.com/fluent/fluent-bit)** [![GitHub Stars](https://img.shields.io/github/stars/fluent/fluent-bit?style=social&color=white)](https://github.com/fluent/fluent-bit/stargazers)  
+- **[Fluent Bit](https://github.com/fluent/fluent-bit)** [![GitHub_Stars](https://img.shields.io/github/stars/fluent/fluent-bit?style=social&color=white)](https://github.com/fluent/fluent-bit/stargazers)  
   **The CNCF lightweight C collector for Kubernetes & Edge.** Engineered for minimal memory footprint (~15-30 MB) and massive event throughput (benchmarked at **31,300+ logs/second**). Commonly deployed as a Kubernetes DaemonSet, sidecar, or IoT agent collecting container logs, systemd journal events, and forwarding directly into Kafka, Loki, Elasticsearch, or S3.
 
-- **[Graylog Server](https://github.com/Graylog2/graylog2-server)** [![GitHub Stars](https://img.shields.io/github/stars/Graylog2/graylog2-server?style=social&color=white)](https://github.com/Graylog2/graylog2-server/stargazers)  
+- **[Graylog Server](https://github.com/Graylog2/graylog2-server)** [![GitHub_Stars](https://img.shields.io/github/stars/Graylog2/graylog2-server?style=social&color=white)](https://github.com/Graylog2/graylog2-server/stargazers)  
   **Open-source centralized log management and SIEM platform.** Offers high-volume log capture (via GELF, Syslog, Beats), structured pipeline stream processors, fast search querying over Elasticsearch/OpenSearch, and built-in role-based access control and compliance dashboards.
 
-- **[OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector)** [![GitHub Stars](https://img.shields.io/github/stars/open-telemetry/opentelemetry-collector?style=social&color=white)](https://github.com/open-telemetry/opentelemetry-collector/stargazers)  
+- **[OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector)** [![GitHub_Stars](https://img.shields.io/github/stars/open-telemetry/opentelemetry-collector?style=social&color=white)](https://github.com/open-telemetry/opentelemetry-collector/stargazers)  
   **The vendor-neutral CNCF observability standard.** Provides high-throughput ingestion, filtering, and export for logs, traces, and metrics under a single unified binary. Includes standard receivers for filelog, journald, syslog, and OTLP protocols, backed by an extensive library of processors in [opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib).
 
-- **[Grafana Alloy](https://github.com/grafana/alloy)** [![GitHub Stars](https://img.shields.io/github/stars/grafana/alloy?style=social&color=white)](https://github.com/grafana/alloy/stargazers)  
+- **[Grafana Alloy](https://github.com/grafana/alloy)** [![GitHub_Stars](https://img.shields.io/github/stars/grafana/alloy?style=social&color=white)](https://github.com/grafana/alloy/stargazers)  
   **The official successor to Promtail.** Vendor-neutral OpenTelemetry Collector distribution with built-in native support for Prometheus metrics, Loki log tailing, and Pyroscope profiling. Uses a declarative configuration syntax with dynamic component reloads, replacing legacy Promtail deployments.
 
-- **[Syslog-ng](https://github.com/syslog-ng/syslog-ng)** [![GitHub Stars](https://img.shields.io/github/stars/syslog-ng/syslog-ng?style=social&color=white)](https://github.com/syslog-ng/syslog-ng/stargazers)  
+- **[Syslog-ng](https://github.com/syslog-ng/syslog-ng)** [![GitHub_Stars](https://img.shields.io/github/stars/syslog-ng/syslog-ng?style=social&color=white)](https://github.com/syslog-ng/syslog-ng/stargazers)  
   **High-performance system logging daemon.** Supports RFC 3164/5424 syslog, JSON parsing, message classification, pattern databases, and reliable delivery across TLS, disk buffers, and message queues.
 
-- **[Rsyslog](https://github.com/rsyslog/rsyslog)** [![GitHub Stars](https://img.shields.io/github/stars/rsyslog/rsyslog?style=social&color=white)](https://github.com/rsyslog/rsyslog/stargazers)  
+- **[Rsyslog](https://github.com/rsyslog/rsyslog)** [![GitHub_Stars](https://img.shields.io/github/stars/rsyslog/rsyslog?style=social&color=white)](https://github.com/rsyslog/rsyslog/stargazers)  
   **The default, rocket-fast syslog utility on Linux distributions.** Highly optimized C architecture capable of processing over one million messages per second. Features flexible rule engines, queuing modes, multithreading, and direct database outputs.
 
 ---
