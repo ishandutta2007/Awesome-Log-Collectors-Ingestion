@@ -31,6 +31,7 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 - [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
 - [🛠️ Open-Source GitHub Projects](#️-open-source-github-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [📈 Star History](#-star-history)
 - [⚠️ Disclaimer](#️-disclaimer)
 
@@ -108,6 +109,26 @@ Contributions are welcome and appreciated! Follow these steps:
 3. 📝 **Add or edit entries in `README.md`** following the established format, keeping descriptions objective, accurate, and benchmark-informed.
 4. ⭐ **Ensure links and badges are valid**.
 5. 🚀 **Submit a Pull Request** with a brief overview of changes.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and utilizing **Awesome Log Collectors & Ingestion**! If this curated guide helps streamline your telemetry pipelines, save cloud ingress/forwarding costs, or choose the right log shippers for your architecture:
+
+- ⭐ **Star this repository** to show your appreciation and help other SREs & engineers discover it.
+- 🍴 **Fork and share** it with your DevOps and platform engineering teams.
+- ☕ **Buy me a coffee / sponsor the project** via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007) to help support future maintenance, comprehensive benchmarking updates, and open-source observability research!
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=githubsponsors" alt="Sponsor on GitHub" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
+  </a>
+</p>
 
 ---
 
